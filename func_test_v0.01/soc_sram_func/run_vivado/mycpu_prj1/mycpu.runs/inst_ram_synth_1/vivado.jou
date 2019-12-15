@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 15 15:01:33 2019
+# Process ID: 4888
+# Current directory: C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/inst_ram_synth_1
+# Command line: vivado.exe -log inst_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inst_ram.tcl
+# Log file: C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/inst_ram_synth_1/inst_ram.vds
+# Journal file: C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/inst_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source inst_ram.tcl -notrace

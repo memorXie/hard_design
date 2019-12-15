@@ -1,0 +1,67 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/xieyuhuai/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 1 for port 'int' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:141]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'memwriteM' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/imports/myCPU/top.v:55]
+WARNING: [VRFC 10-3091] actual bit length 18 differs from formal bit length 32 for port 'd' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/imports/myCPU/controller.v:88]
+WARNING: [VRFC 10-3091] actual bit length 18 differs from formal bit length 32 for port 'q' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/imports/myCPU/controller.v:89]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 16 for port 'd' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/imports/myCPU/controller.v:93]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 16 for port 'q' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/imports/myCPU/controller.v:94]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'd' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/imports/myCPU/controller.v:98]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 16 for port 'q' [C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.srcs/sources_1/imports/myCPU/controller.v:99]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.ALU_control
+Compiling module xil_defaultlib.data_memory_controller
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.flopenrc(WIDTH=16)
+Compiling module xil_defaultlib.flopenr(WIDTH=16)
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.PC(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenr(WIDTH=32)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.mux3(WIDTH=64)
+Compiling module xil_defaultlib.div_radix2
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.store_which
+Compiling module xil_defaultlib.flopenrc(WIDTH=64)
+Compiling module xil_defaultlib.load_which
+Compiling module xil_defaultlib.flopenr(WIDTH=5)
+Compiling module xil_defaultlib.flopenr(WIDTH=64)
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.top
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/xieyuhuai/Desktop/design/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" Line 131. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

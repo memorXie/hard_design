@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 14 19:53:55 2019
+# Process ID: 12148
+# Current directory: C:/Users/xieyuhuai/Desktop/硬件综合设计/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2496 C:\Users\xieyuhuai\Desktop\硬件综合设计\func_test_v0.01\soc_sram_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/xieyuhuai/Desktop/硬件综合设计/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/xieyuhuai/Desktop/硬件综合设计/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/xieyuhuai/Desktop/硬件综合设计/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1

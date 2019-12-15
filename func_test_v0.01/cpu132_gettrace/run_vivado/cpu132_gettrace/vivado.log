@@ -1,0 +1,2352 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  8 10:16:56 2019
+# Process ID: 2988
+# Current directory: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3220 E:\TestDoc\cpu132_gettrace\run_vivado\cpu132_gettrace\cpu132_gettrace.xpr
+# Log file: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/vivado.log
+# Journal file: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.xpr
+INFO: [Project 1-313] Project file moved from 'E:/nscscc2019/develop/trash/func_test_v0.03/cpu132_gettrace/run_vivado/cpu132_gettrace' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'clk_pll_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'data_ram_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'inst_ram_synth_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files', nor could it be found using path 'E:/nscscc2019/develop/trash/func_test_v0.03/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_2018_software/Vivado/2018.3/data/ip'.
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+open_project: Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 1114.473 ; gain = 516.113
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/TestDoc/soft/func/obj/inst_ram.coe] -no_script -reset -force -quiet
+remove_files  E:/TestDoc/soft/func/obj/inst_ram.coe
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../soft/part_func/obj/inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {E:/TestDoc/soft/part_func/obj/inst_ram.coe}] [get_ips inst_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../soft/part_func/obj/inst_ram.coe'
+generate_target all [get_files  E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_ram'...
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1185.398 ; gain = 17.043
+export_ip_user_files -of_objects [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+launch_runs -jobs 4 inst_ram_synth_1
+[Sun Dec  8 10:35:35 2019] Launched inst_ram_synth_1...
+Run output will be captured here: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/inst_ram_synth_1/runme.log
+generate_target all [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_pll'...
+export_ip_user_files -of_objects [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files/sim_scripts -ip_user_files_dir E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files -ipstatic_source_dir E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.cache/compile_simlib/questa} {riviera=E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.cache/compile_simlib/riviera} {activehdl=E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'data_ram'...
+export_ip_user_files -of_objects [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram.xci] -directory E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files/sim_scripts -ip_user_files_dir E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files -ipstatic_source_dir E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.cache/compile_simlib/questa} {riviera=E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.cache/compile_simlib/riviera} {activehdl=E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_run {clk_pll_synth_1 data_ram_synth_1}
+[Sun Dec  8 10:36:32 2019] Launched clk_pll_synth_1, data_ram_synth_1...
+Run output will be captured here:
+clk_pll_synth_1: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/runme.log
+data_ram_synth_1: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1/runme.log
+wait_on_run clk_pll_synth_1
+
+[Sun Dec  8 10:36:33 2019] Waiting for clk_pll_synth_1 to finish...
+[Sun Dec  8 10:36:38 2019] Waiting for clk_pll_synth_1 to finish...
+[Sun Dec  8 10:36:43 2019] Waiting for clk_pll_synth_1 to finish...
+[Sun Dec  8 10:36:48 2019] Waiting for clk_pll_synth_1 to finish...
+[Sun Dec  8 10:36:58 2019] Waiting for clk_pll_synth_1 to finish...
+[Sun Dec  8 10:37:08 2019] Waiting for clk_pll_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_pll.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_pll.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source clk_pll.tcl -notrace
+Command: synth_design -top clk_pll -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3280 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 469.547 ; gain = 101.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll_clk_wiz' [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 9 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 18 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 9 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll_clk_wiz' (4#1) [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (5#1) [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.285 ; gain = 157.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.285 ; gain = 157.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.285 ; gain = 157.480
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'inst'
+Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_pll_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clk_pll_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.105 ; gain = 0.000
+Parsing XDC File [E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.113 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 821.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 869.320 ; gain = 501.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 869.320 ; gain = 501.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |PLLE2_ADV |     1|
+|3     |IBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |     5|
+|2     |  inst   |clk_pll_clk_wiz |     5|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 878.855 ; gain = 215.223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 893.891 ; gain = 537.555
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.891 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/clk_pll.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_pll_utilization_synth.rpt -pb clk_pll_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 10:37:07 2019...
+[Sun Dec  8 10:37:13 2019] clk_pll_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:40 . Memory (MB): peak = 1193.457 ; gain = 0.000
+wait_on_run clk_pll_synth_1
+wait_on_run data_ram_synth_1
+
+[Sun Dec  8 10:37:13 2019] Waiting for clk_pll_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_pll.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_pll.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source clk_pll.tcl -notrace
+Command: synth_design -top clk_pll -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3280 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 469.547 ; gain = 101.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll_clk_wiz' [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 9 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 18 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 9 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41045]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/vivado_2018_software/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll_clk_wiz' (4#1) [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (5#1) [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.285 ; gain = 157.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.285 ; gain = 157.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.285 ; gain = 157.480
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'inst'
+Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_pll_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clk_pll_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.105 ; gain = 0.000
+Parsing XDC File [E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.113 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 821.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 821.113 ; gain = 453.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 869.320 ; gain = 501.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 869.320 ; gain = 501.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |PLLE2_ADV |     1|
+|3     |IBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |     5|
+|2     |  inst   |clk_pll_clk_wiz |     5|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 878.855 ; gain = 215.223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 878.855 ; gain = 511.051
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 893.891 ; gain = 537.555
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.891 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/clk_pll_synth_1/clk_pll.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_pll_utilization_synth.rpt -pb clk_pll_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 10:37:07 2019...
+[Sun Dec  8 10:37:13 2019] clk_pll_synth_1 finished
+[Sun Dec  8 10:37:13 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:37:18 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:37:23 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:37:28 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:37:38 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:37:48 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:37:58 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:38:08 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:38:28 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:38:48 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:39:08 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:39:28 2019] Waiting for data_ram_synth_1 to finish...
+[Sun Dec  8 10:40:08 2019] Waiting for data_ram_synth_1 to finish...
+
+*** Running vivado
+    with args -log data_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_ram.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source data_ram.tcl -notrace
+Command: synth_design -top data_ram -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8704 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 468.711 ; gain = 101.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'data_ram' [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/synth/data_ram.vhd:70]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: data_ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 65536 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 65536 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 65536 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 65536 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 64 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     10.194002 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/synth/data_ram.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'data_ram' (11#1) [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/synth/data_ram.vhd:70]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[127]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[126]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[125]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[124]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[123]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[122]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[121]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[120]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[119]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[118]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[117]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[116]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[115]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[114]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[113]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[112]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[111]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[110]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[109]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[108]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[107]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[106]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[105]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[104]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[103]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[102]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[101]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[100]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[99]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[98]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[97]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[96]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[95]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[94]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[93]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[92]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[91]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[90]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[89]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[88]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[87]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[86]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[85]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[84]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[83]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[82]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[81]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[80]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[79]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[78]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[77]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[76]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[75]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[74]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[73]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[72]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[71]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[70]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[69]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[68]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[67]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[66]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[65]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[64]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[63]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[62]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[61]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[60]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[59]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[58]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[57]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[56]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[55]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[54]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[53]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[52]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[51]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[50]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:12 ; elapsed = 00:02:16 . Memory (MB): peak = 751.367 ; gain = 384.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:12 ; elapsed = 00:02:16 . Memory (MB): peak = 751.367 ; gain = 384.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:12 ; elapsed = 00:02:16 . Memory (MB): peak = 751.367 ; gain = 384.500
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/data_ram_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 941.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 941.227 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.253 . Memory (MB): peak = 942.793 ; gain = 1.570
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:21 ; elapsed = 00:02:32 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:21 ; elapsed = 00:02:32 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:21 ; elapsed = 00:02:32 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:23 ; elapsed = 00:02:34 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:02:36 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:32 ; elapsed = 00:02:45 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:02:46 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:33 ; elapsed = 00:02:46 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT5     |    16|
+|2     |LUT6     |   128|
+|3     |MUXF7    |    64|
+|4     |MUXF8    |    32|
+|5     |RAMB36E1 |    64|
+|6     |FDRE     |     4|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+------------------------------------------+------+
+|      |Instance                                     |Module                                    |Cells |
++------+---------------------------------------------+------------------------------------------+------+
+|1     |top                                          |                                          |   308|
+|2     |  U0                                         |blk_mem_gen_v8_4_2                        |   308|
+|3     |    inst_blk_mem_gen                         |blk_mem_gen_v8_4_2_synth                  |   308|
+|4     |      \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |   308|
+|5     |        \valid.cstr                          |blk_mem_gen_generic_cstr                  |   308|
+|6     |          \has_mux_a.A                       |blk_mem_gen_mux                           |   228|
+|7     |          \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     1|
+|8     |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     1|
+|9     |          \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9    |     1|
+|10    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     1|
+|11    |          \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10   |     1|
+|12    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     1|
+|13    |          \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11   |     1|
+|14    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized11 |     1|
+|15    |          \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12   |     1|
+|16    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized12 |     1|
+|17    |          \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13   |     1|
+|18    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized13 |     1|
+|19    |          \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14   |     1|
+|20    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized14 |     1|
+|21    |          \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15   |     1|
+|22    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized15 |     1|
+|23    |          \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16   |     1|
+|24    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized16 |     1|
+|25    |          \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17   |     1|
+|26    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized17 |     1|
+|27    |          \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18   |     1|
+|28    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized18 |     1|
+|29    |          \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     1|
+|30    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     1|
+|31    |          \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19   |     1|
+|32    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized19 |     1|
+|33    |          \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20   |     1|
+|34    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized20 |     1|
+|35    |          \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21   |     1|
+|36    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized21 |     1|
+|37    |          \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22   |     1|
+|38    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized22 |     1|
+|39    |          \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23   |     1|
+|40    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized23 |     1|
+|41    |          \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24   |     1|
+|42    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized24 |     1|
+|43    |          \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25   |     1|
+|44    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized25 |     1|
+|45    |          \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26   |     1|
+|46    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized26 |     1|
+|47    |          \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27   |     1|
+|48    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized27 |     1|
+|49    |          \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28   |     1|
+|50    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized28 |     1|
+|51    |          \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     1|
+|52    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     1|
+|53    |          \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29   |     1|
+|54    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized29 |     1|
+|55    |          \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30   |     1|
+|56    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized30 |     1|
+|57    |          \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31   |     2|
+|58    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized31 |     2|
+|59    |          \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32   |     2|
+|60    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized32 |     2|
+|61    |          \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized33   |     2|
+|62    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized33 |     2|
+|63    |          \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized34   |     2|
+|64    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized34 |     2|
+|65    |          \ramloop[36].ram.r                 |blk_mem_gen_prim_width__parameterized35   |     2|
+|66    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized35 |     2|
+|67    |          \ramloop[37].ram.r                 |blk_mem_gen_prim_width__parameterized36   |     2|
+|68    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized36 |     2|
+|69    |          \ramloop[38].ram.r                 |blk_mem_gen_prim_width__parameterized37   |     2|
+|70    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized37 |     2|
+|71    |          \ramloop[39].ram.r                 |blk_mem_gen_prim_width__parameterized38   |     2|
+|72    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized38 |     2|
+|73    |          \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     1|
+|74    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     1|
+|75    |          \ramloop[40].ram.r                 |blk_mem_gen_prim_width__parameterized39   |     2|
+|76    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized39 |     2|
+|77    |          \ramloop[41].ram.r                 |blk_mem_gen_prim_width__parameterized40   |     2|
+|78    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized40 |     2|
+|79    |          \ramloop[42].ram.r                 |blk_mem_gen_prim_width__parameterized41   |     2|
+|80    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized41 |     2|
+|81    |          \ramloop[43].ram.r                 |blk_mem_gen_prim_width__parameterized42   |     2|
+|82    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized42 |     2|
+|83    |          \ramloop[44].ram.r                 |blk_mem_gen_prim_width__parameterized43   |     2|
+|84    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized43 |     2|
+|85    |          \ramloop[45].ram.r                 |blk_mem_gen_prim_width__parameterized44   |     2|
+|86    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized44 |     2|
+|87    |          \ramloop[46].ram.r                 |blk_mem_gen_prim_width__parameterized45   |     2|
+|88    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized45 |     2|
+|89    |          \ramloop[47].ram.r                 |blk_mem_gen_prim_width__parameterized46   |     1|
+|90    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized46 |     1|
+|91    |          \ramloop[48].ram.r                 |blk_mem_gen_prim_width__parameterized47   |     1|
+|92    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized47 |     1|
+|93    |          \ramloop[49].ram.r                 |blk_mem_gen_prim_width__parameterized48   |     1|
+|94    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized48 |     1|
+|95    |          \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     1|
+|96    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     1|
+|97    |          \ramloop[50].ram.r                 |blk_mem_gen_prim_width__parameterized49   |     1|
+|98    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized49 |     1|
+|99    |          \ramloop[51].ram.r                 |blk_mem_gen_prim_width__parameterized50   |     1|
+|100   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized50 |     1|
+|101   |          \ramloop[52].ram.r                 |blk_mem_gen_prim_width__parameterized51   |     1|
+|102   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized51 |     1|
+|103   |          \ramloop[53].ram.r                 |blk_mem_gen_prim_width__parameterized52   |     1|
+|104   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized52 |     1|
+|105   |          \ramloop[54].ram.r                 |blk_mem_gen_prim_width__parameterized53   |     1|
+|106   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized53 |     1|
+|107   |          \ramloop[55].ram.r                 |blk_mem_gen_prim_width__parameterized54   |     1|
+|108   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized54 |     1|
+|109   |          \ramloop[56].ram.r                 |blk_mem_gen_prim_width__parameterized55   |     1|
+|110   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized55 |     1|
+|111   |          \ramloop[57].ram.r                 |blk_mem_gen_prim_width__parameterized56   |     1|
+|112   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized56 |     1|
+|113   |          \ramloop[58].ram.r                 |blk_mem_gen_prim_width__parameterized57   |     1|
+|114   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized57 |     1|
+|115   |          \ramloop[59].ram.r                 |blk_mem_gen_prim_width__parameterized58   |     1|
+|116   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized58 |     1|
+|117   |          \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     1|
+|118   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     1|
+|119   |          \ramloop[60].ram.r                 |blk_mem_gen_prim_width__parameterized59   |     1|
+|120   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized59 |     1|
+|121   |          \ramloop[61].ram.r                 |blk_mem_gen_prim_width__parameterized60   |     1|
+|122   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized60 |     1|
+|123   |          \ramloop[62].ram.r                 |blk_mem_gen_prim_width__parameterized61   |     1|
+|124   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized61 |     1|
+|125   |          \ramloop[63].ram.r                 |blk_mem_gen_prim_width__parameterized62   |     2|
+|126   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized62 |     2|
+|127   |          \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     1|
+|128   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     1|
+|129   |          \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     1|
+|130   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     1|
+|131   |          \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     1|
+|132   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     1|
+|133   |          \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     1|
+|134   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     1|
++------+---------------------------------------------+------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:34 ; elapsed = 00:02:48 . Memory (MB): peak = 942.793 ; gain = 575.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 208 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:02:36 . Memory (MB): peak = 942.793 ; gain = 384.500
+Synthesis Optimization Complete : Time (s): cpu = 00:02:34 ; elapsed = 00:02:49 . Memory (MB): peak = 942.793 ; gain = 575.926
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 160 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 951.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:37 ; elapsed = 00:02:57 . Memory (MB): peak = 951.820 ; gain = 596.426
+INFO: [Coretcl 2-1174] Renamed 133 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 951.820 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/data_ram_synth_1/data_ram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file data_ram_utilization_synth.rpt -pb data_ram_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 10:40:21 2019...
+[Sun Dec  8 10:40:28 2019] data_ram_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:14 ; elapsed = 00:03:15 . Memory (MB): peak = 1193.457 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado_2018_software/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ejtag_tap_fsm
+INFO: [VRFC 10-311] analyzing module gr_heap_2r1w_32x32
+INFO: [VRFC 10-311] analyzing module ls132r_decode_stage
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_dcr
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_hb
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_ib
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_tap
+INFO: [VRFC 10-311] analyzing module ls132r_execute_stage
+INFO: [VRFC 10-311] analyzing module ls132r_fetch_stage
+INFO: [VRFC 10-311] analyzing module ls132r_interface
+INFO: [VRFC 10-311] analyzing module ls132r_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado_2018_software/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8be32c0e75274db89ff01e49e80abbee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:17534]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:18261]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22335]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22785]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:23620]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:24978]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:36552]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:42650]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:44039]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:48896]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49221]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49580]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49597]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51474]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51477]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:53029]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.gr_heap_2r1w_32x32
+Compiling module xil_defaultlib.ls132r_decode_stage
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.ls132r_ejtag_dcr
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ls132r_ejtag_ib
+Compiling module xil_defaultlib.ls132r_ejtag_hb
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.ejtag_tap_fsm
+Compiling module xil_defaultlib.ls132r_ejtag_tap
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.ls132r_execute_stage
+Compiling module xil_defaultlib.ls132r_fetch_stage
+Compiling module xil_defaultlib.ls132r_interface
+Compiling module xil_defaultlib.ls132r_top
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 83.324 ; gain = 1.059
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec  8 10:40:52 2019...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1193.457 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+# run 1000
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1260.648 ; gain = 67.191
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 1260.648 ; gain = 67.191
+run all
+==============================================================
+Test begin!
+----[  14055 ns] Number 8'd01 Functional Test Point PASS!!!
+        [  22000 ns] Test is running, debug_wb_pc = 0xbfc4382c
+        [  32000 ns] Test is running, debug_wb_pc = 0xbfc447cc
+----[  40555 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  42000 ns] Test is running, debug_wb_pc = 0xbfc74428
+----[  49475 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc24998
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc25cb4
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc26f98
+----[  73845 ns] Number 8'd04 Functional Test Point PASS!!!
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc18d40
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc19e9c
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc1b428
+----[ 111715 ns] Number 8'd05 Functional Test Point PASS!!!
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc00768
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc36c28
+----[ 127355 ns] Number 8'd06 Functional Test Point PASS!!!
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc51a98
+        [ 142000 ns] Test is running, debug_wb_pc = 0xbfc52a38
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc539d8
+----[ 153775 ns] Number 8'd07 Functional Test Point PASS!!!
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc3d720
+        [ 172000 ns] Test is running, debug_wb_pc = 0xbfc3e6c0
+----[ 177225 ns] Number 8'd08 Functional Test Point PASS!!!
+        [ 182000 ns] Test is running, debug_wb_pc = 0xbfc543ac
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc5534c
+----[ 195165 ns] Number 8'd09 Functional Test Point PASS!!!
+        [ 202000 ns] Test is running, debug_wb_pc = 0xbfc27dc4
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc28d64
+----[ 213105 ns] Number 8'd10 Functional Test Point PASS!!!
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc565bc
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc5755c
+----[ 232405 ns] Number 8'd11 Functional Test Point PASS!!!
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc06114
+----[ 249835 ns] Number 8'd12 Functional Test Point PASS!!!
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc29278
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc2a40c
+        [ 272000 ns] Test is running, debug_wb_pc = 0xbfc2b5cc
+----[ 278055 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 282000 ns] Test is running, debug_wb_pc = 0xbfc4d910
+        [ 292000 ns] Test is running, debug_wb_pc = 0xbfc4ea30
+        [ 302000 ns] Test is running, debug_wb_pc = 0xbfc4fb6c
+        [ 312000 ns] Test is running, debug_wb_pc = 0xbfc50c5c
+----[ 316265 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 322000 ns] Test is running, debug_wb_pc = 0xbfc686ac
+        [ 332000 ns] Test is running, debug_wb_pc = 0xbfc69808
+        [ 342000 ns] Test is running, debug_wb_pc = 0xbfc6a964
+        [ 352000 ns] Test is running, debug_wb_pc = 0xbfc6bac0
+----[ 354995 ns] Number 8'd15 Functional Test Point PASS!!!
+----[ 358265 ns] Number 8'd16 Functional Test Point PASS!!!
+----[ 361535 ns] Number 8'd17 Functional Test Point PASS!!!
+        [ 362000 ns] Test is running, debug_wb_pc = 0xbfc0fef8
+----[ 363495 ns] Number 8'd18 Functional Test Point PASS!!!
+----[ 365975 ns] Number 8'd19 Functional Test Point PASS!!!
+----[ 368455 ns] Number 8'd20 Functional Test Point PASS!!!
+        [ 372000 ns] Test is running, debug_wb_pc = 0xbfc65b90
+        [ 382000 ns] Test is running, debug_wb_pc = 0xbfc66b30
+----[ 390305 ns] Number 8'd21 Functional Test Point PASS!!!
+        [ 392000 ns] Test is running, debug_wb_pc = 0xbfc0e15c
+        [ 402000 ns] Test is running, debug_wb_pc = 0xbfc0f0fc
+----[ 410745 ns] Number 8'd22 Functional Test Point PASS!!!
+        [ 412000 ns] Test is running, debug_wb_pc = 0xbfc2c1fc
+        [ 422000 ns] Test is running, debug_wb_pc = 0xbfc2d19c
+        [ 432000 ns] Test is running, debug_wb_pc = 0xbfc2e13c
+----[ 432145 ns] Number 8'd23 Functional Test Point PASS!!!
+        [ 442000 ns] Test is running, debug_wb_pc = 0xbfc4641c
+        [ 452000 ns] Test is running, debug_wb_pc = 0xbfc473bc
+----[ 458595 ns] Number 8'd24 Functional Test Point PASS!!!
+        [ 462000 ns] Test is running, debug_wb_pc = 0xbfc0a058
+        [ 472000 ns] Test is running, debug_wb_pc = 0xbfc0aff8
+        [ 482000 ns] Test is running, debug_wb_pc = 0xbfc0bf98
+----[ 482045 ns] Number 8'd25 Functional Test Point PASS!!!
+        [ 492000 ns] Test is running, debug_wb_pc = 0xbfc63e54
+        [ 502000 ns] Test is running, debug_wb_pc = 0xbfc64df4
+----[ 507425 ns] Number 8'd26 Functional Test Point PASS!!!
+        [ 512000 ns] Test is running, debug_wb_pc = 0xbfc379bc
+        [ 522000 ns] Test is running, debug_wb_pc = 0xbfc3895c
+----[ 525365 ns] Number 8'd27 Functional Test Point PASS!!!
+        [ 532000 ns] Test is running, debug_wb_pc = 0xbfc014e4
+        [ 542000 ns] Test is running, debug_wb_pc = 0xbfc02484
+----[ 551795 ns] Number 8'd28 Functional Test Point PASS!!!
+        [ 552000 ns] Test is running, debug_wb_pc = 0xbfc00ae0
+        [ 562000 ns] Test is running, debug_wb_pc = 0xbfc5fc88
+        [ 572000 ns] Test is running, debug_wb_pc = 0xbfc60c28
+----[ 572235 ns] Number 8'd29 Functional Test Point PASS!!!
+        [ 582000 ns] Test is running, debug_wb_pc = 0xbfc2f048
+        [ 592000 ns] Test is running, debug_wb_pc = 0xbfc2ffe8
+----[ 598685 ns] Number 8'd30 Functional Test Point PASS!!!
+        [ 602000 ns] Test is running, debug_wb_pc = 0xbfc0c464
+        [ 612000 ns] Test is running, debug_wb_pc = 0xbfc0d404
+----[ 619125 ns] Number 8'd31 Functional Test Point PASS!!!
+        [ 622000 ns] Test is running, debug_wb_pc = 0xbfc5cee4
+        [ 632000 ns] Test is running, debug_wb_pc = 0xbfc5de84
+----[ 641295 ns] Number 8'd32 Functional Test Point PASS!!!
+        [ 642000 ns] Test is running, debug_wb_pc = 0xbfc61240
+        [ 652000 ns] Test is running, debug_wb_pc = 0xbfc621e0
+----[ 660535 ns] Number 8'd33 Functional Test Point PASS!!!
+        [ 662000 ns] Test is running, debug_wb_pc = 0xbfc10380
+        [ 672000 ns] Test is running, debug_wb_pc = 0xbfc11320
+        [ 682000 ns] Test is running, debug_wb_pc = 0xbfc122c0
+----[ 682945 ns] Number 8'd34 Functional Test Point PASS!!!
+        [ 692000 ns] Test is running, debug_wb_pc = 0xbfc08b5c
+        [ 702000 ns] Test is running, debug_wb_pc = 0xbfc09afc
+----[ 702315 ns] Number 8'd35 Functional Test Point PASS!!!
+        [ 712000 ns] Test is running, debug_wb_pc = 0xbfc41858
+        [ 722000 ns] Test is running, debug_wb_pc = 0xbfc427f8
+----[ 724735 ns] Number 8'd36 Functional Test Point PASS!!!
+        [ 732000 ns] Test is running, debug_wb_pc = 0xbfc48bf8
+        [ 742000 ns] Test is running, debug_wb_pc = 0xbfc49f48
+        [ 752000 ns] Test is running, debug_wb_pc = 0xbfc4b328
+        [ 762000 ns] Test is running, debug_wb_pc = 0xbfc4c6f0
+----[ 767945 ns] Number 8'd37 Functional Test Point PASS!!!
+        [ 772000 ns] Test is running, debug_wb_pc = 0xbfc31194
+        [ 782000 ns] Test is running, debug_wb_pc = 0xbfc3256c
+        [ 792000 ns] Test is running, debug_wb_pc = 0xbfc33924
+        [ 802000 ns] Test is running, debug_wb_pc = 0xbfc34d28
+----[ 810875 ns] Number 8'd38 Functional Test Point PASS!!!
+        [ 812000 ns] Test is running, debug_wb_pc = 0xbfc577b0
+        [ 822000 ns] Test is running, debug_wb_pc = 0xbfc58bb8
+        [ 832000 ns] Test is running, debug_wb_pc = 0xbfc59f54
+        [ 842000 ns] Test is running, debug_wb_pc = 0xbfc5b2ec
+        [ 852000 ns] Test is running, debug_wb_pc = 0xbfc5c710
+----[ 854085 ns] Number 8'd39 Functional Test Point PASS!!!
+        [ 862000 ns] Test is running, debug_wb_pc = 0xbfc39bdc
+        [ 872000 ns] Test is running, debug_wb_pc = 0xbfc3ae1c
+        [ 882000 ns] Test is running, debug_wb_pc = 0xbfc3c07c
+----[ 887675 ns] Number 8'd40 Functional Test Point PASS!!!
+        [ 892000 ns] Test is running, debug_wb_pc = 0xbfc1cca8
+        [ 902000 ns] Test is running, debug_wb_pc = 0xbfc1dee8
+        [ 912000 ns] Test is running, debug_wb_pc = 0xbfc1f100
+        [ 922000 ns] Test is running, debug_wb_pc = 0xbfc20358
+        [ 932000 ns] Test is running, debug_wb_pc = 0xbfc21608
+----[ 935465 ns] Number 8'd41 Functional Test Point PASS!!!
+        [ 942000 ns] Test is running, debug_wb_pc = 0xbfc12fdc
+        [ 952000 ns] Test is running, debug_wb_pc = 0xbfc1428c
+        [ 962000 ns] Test is running, debug_wb_pc = 0xbfc154dc
+        [ 972000 ns] Test is running, debug_wb_pc = 0xbfc1671c
+        [ 982000 ns] Test is running, debug_wb_pc = 0xbfc1794c
+----[ 985425 ns] Number 8'd42 Functional Test Point PASS!!!
+        [ 992000 ns] Test is running, debug_wb_pc = 0xbfc6ca0c
+        [1002000 ns] Test is running, debug_wb_pc = 0xbfc6da14
+        [1012000 ns] Test is running, debug_wb_pc = 0xbfc6ea2c
+        [1022000 ns] Test is running, debug_wb_pc = 0xbfc6fa20
+        [1032000 ns] Test is running, debug_wb_pc = 0xbfc70a28
+----[1040415 ns] Number 8'd43 Functional Test Point PASS!!!
+        [1042000 ns] Test is running, debug_wb_pc = 0xbfc3ef78
+        [1052000 ns] Test is running, debug_wb_pc = 0xbfc3f430
+        [1062000 ns] Test is running, debug_wb_pc = 0xbfc3f8e0
+        [1072000 ns] Test is running, debug_wb_pc = 0xbfc3fd78
+        [1082000 ns] Test is running, debug_wb_pc = 0xbfc40210
+        [1092000 ns] Test is running, debug_wb_pc = 0xbfc406dc
+----[1098085 ns] Number 8'd44 Functional Test Point PASS!!!
+        [1102000 ns] Test is running, debug_wb_pc = 0xbfc71d20
+        [1112000 ns] Test is running, debug_wb_pc = 0xbfc721d0
+        [1122000 ns] Test is running, debug_wb_pc = 0xbfc72688
+        [1132000 ns] Test is running, debug_wb_pc = 0xbfc72b20
+        [1142000 ns] Test is running, debug_wb_pc = 0xbfc72fb8
+        [1152000 ns] Test is running, debug_wb_pc = 0xbfc7347c
+        [1162000 ns] Test is running, debug_wb_pc = 0xbfc73920
+        [1172000 ns] Test is running, debug_wb_pc = 0xbfc73db8
+----[1181995 ns] Number 8'd45 Functional Test Point PASS!!!
+        [1182000 ns] Test is running, debug_wb_pc = 0xbfc7425c
+        [1192000 ns] Test is running, debug_wb_pc = 0xbfc22144
+        [1202000 ns] Test is running, debug_wb_pc = 0xbfc22648
+        [1212000 ns] Test is running, debug_wb_pc = 0xbfc22b58
+        [1222000 ns] Test is running, debug_wb_pc = 0xbfc23044
+        [1232000 ns] Test is running, debug_wb_pc = 0xbfc2352c
+        [1242000 ns] Test is running, debug_wb_pc = 0xbfc23a48
+        [1252000 ns] Test is running, debug_wb_pc = 0xbfc23ee8
+----[1256455 ns] Number 8'd46 Functional Test Point PASS!!!
+        [1262000 ns] Test is running, debug_wb_pc = 0xbfc0368c
+        [1272000 ns] Test is running, debug_wb_pc = 0xbfc03b78
+        [1282000 ns] Test is running, debug_wb_pc = 0xbfc04064
+        [1292000 ns] Test is running, debug_wb_pc = 0xbfc04570
+        [1302000 ns] Test is running, debug_wb_pc = 0xbfc04a78
+        [1312000 ns] Test is running, debug_wb_pc = 0xbfc04f60
+        [1322000 ns] Test is running, debug_wb_pc = 0xbfc05424
+----[1323235 ns] Number 8'd47 Functional Test Point PASS!!!
+==============================================================
+gettrace end!
+----Succeed in generating trace file!
+$finish called at time : 1323905 ns : File "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" Line 221
+run: Time (s): cpu = 00:01:06 ; elapsed = 00:02:33 . Memory (MB): peak = 1274.555 ; gain = 9.859
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../soft/part_func/obj/inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {E:/TestDoc/soft/part_func/obj/inst_ram.coe}] [get_ips inst_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../soft/part_func/obj/inst_ram.coe'
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1306.172 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado_2018_software/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado_2018_software/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8be32c0e75274db89ff01e49e80abbee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:17534]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:18261]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22335]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22785]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:23620]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:24978]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:36552]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:42650]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:44039]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:48896]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49221]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49580]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49597]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51474]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51477]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:53029]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.172 ; gain = 0.000
+run all
+==============================================================
+Test begin!
+----[  14055 ns] Number 8'd01 Functional Test Point PASS!!!
+        [  22000 ns] Test is running, debug_wb_pc = 0xbfc4382c
+        [  32000 ns] Test is running, debug_wb_pc = 0xbfc447cc
+----[  40555 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  42000 ns] Test is running, debug_wb_pc = 0xbfc74428
+----[  49475 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc24998
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc25cb4
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc26f98
+----[  73845 ns] Number 8'd04 Functional Test Point PASS!!!
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc18d40
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc19e9c
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc1b428
+----[ 111715 ns] Number 8'd05 Functional Test Point PASS!!!
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc00768
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc36c28
+----[ 127355 ns] Number 8'd06 Functional Test Point PASS!!!
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc51a98
+        [ 142000 ns] Test is running, debug_wb_pc = 0xbfc52a38
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc539d8
+----[ 153775 ns] Number 8'd07 Functional Test Point PASS!!!
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc3d720
+        [ 172000 ns] Test is running, debug_wb_pc = 0xbfc3e6c0
+----[ 177225 ns] Number 8'd08 Functional Test Point PASS!!!
+        [ 182000 ns] Test is running, debug_wb_pc = 0xbfc543ac
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc5534c
+----[ 195165 ns] Number 8'd09 Functional Test Point PASS!!!
+        [ 202000 ns] Test is running, debug_wb_pc = 0xbfc27dc4
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc28d64
+----[ 213105 ns] Number 8'd10 Functional Test Point PASS!!!
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc565bc
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc5755c
+----[ 232405 ns] Number 8'd11 Functional Test Point PASS!!!
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc06114
+----[ 249835 ns] Number 8'd12 Functional Test Point PASS!!!
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc29278
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc2a40c
+        [ 272000 ns] Test is running, debug_wb_pc = 0xbfc2b5cc
+----[ 278055 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 282000 ns] Test is running, debug_wb_pc = 0xbfc4d910
+        [ 292000 ns] Test is running, debug_wb_pc = 0xbfc4ea30
+        [ 302000 ns] Test is running, debug_wb_pc = 0xbfc4fb6c
+        [ 312000 ns] Test is running, debug_wb_pc = 0xbfc50c5c
+----[ 316265 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 322000 ns] Test is running, debug_wb_pc = 0xbfc686ac
+        [ 332000 ns] Test is running, debug_wb_pc = 0xbfc69808
+        [ 342000 ns] Test is running, debug_wb_pc = 0xbfc6a964
+        [ 352000 ns] Test is running, debug_wb_pc = 0xbfc6bac0
+----[ 354995 ns] Number 8'd15 Functional Test Point PASS!!!
+----[ 358265 ns] Number 8'd16 Functional Test Point PASS!!!
+----[ 361535 ns] Number 8'd17 Functional Test Point PASS!!!
+        [ 362000 ns] Test is running, debug_wb_pc = 0xbfc0fef8
+----[ 363495 ns] Number 8'd18 Functional Test Point PASS!!!
+----[ 365975 ns] Number 8'd19 Functional Test Point PASS!!!
+----[ 368455 ns] Number 8'd20 Functional Test Point PASS!!!
+        [ 372000 ns] Test is running, debug_wb_pc = 0xbfc65b90
+        [ 382000 ns] Test is running, debug_wb_pc = 0xbfc66b30
+----[ 390305 ns] Number 8'd21 Functional Test Point PASS!!!
+        [ 392000 ns] Test is running, debug_wb_pc = 0xbfc0e15c
+        [ 402000 ns] Test is running, debug_wb_pc = 0xbfc0f0fc
+----[ 410745 ns] Number 8'd22 Functional Test Point PASS!!!
+        [ 412000 ns] Test is running, debug_wb_pc = 0xbfc2c1fc
+        [ 422000 ns] Test is running, debug_wb_pc = 0xbfc2d19c
+        [ 432000 ns] Test is running, debug_wb_pc = 0xbfc2e13c
+----[ 432145 ns] Number 8'd23 Functional Test Point PASS!!!
+        [ 442000 ns] Test is running, debug_wb_pc = 0xbfc4641c
+        [ 452000 ns] Test is running, debug_wb_pc = 0xbfc473bc
+----[ 458595 ns] Number 8'd24 Functional Test Point PASS!!!
+        [ 462000 ns] Test is running, debug_wb_pc = 0xbfc0a058
+        [ 472000 ns] Test is running, debug_wb_pc = 0xbfc0aff8
+        [ 482000 ns] Test is running, debug_wb_pc = 0xbfc0bf98
+----[ 482045 ns] Number 8'd25 Functional Test Point PASS!!!
+        [ 492000 ns] Test is running, debug_wb_pc = 0xbfc63e54
+        [ 502000 ns] Test is running, debug_wb_pc = 0xbfc64df4
+----[ 507425 ns] Number 8'd26 Functional Test Point PASS!!!
+        [ 512000 ns] Test is running, debug_wb_pc = 0xbfc379bc
+        [ 522000 ns] Test is running, debug_wb_pc = 0xbfc3895c
+----[ 525365 ns] Number 8'd27 Functional Test Point PASS!!!
+        [ 532000 ns] Test is running, debug_wb_pc = 0xbfc014e4
+        [ 542000 ns] Test is running, debug_wb_pc = 0xbfc02484
+----[ 551795 ns] Number 8'd28 Functional Test Point PASS!!!
+        [ 552000 ns] Test is running, debug_wb_pc = 0xbfc00ae0
+        [ 562000 ns] Test is running, debug_wb_pc = 0xbfc5fc88
+        [ 572000 ns] Test is running, debug_wb_pc = 0xbfc60c28
+----[ 572235 ns] Number 8'd29 Functional Test Point PASS!!!
+        [ 582000 ns] Test is running, debug_wb_pc = 0xbfc2f048
+        [ 592000 ns] Test is running, debug_wb_pc = 0xbfc2ffe8
+----[ 598685 ns] Number 8'd30 Functional Test Point PASS!!!
+        [ 602000 ns] Test is running, debug_wb_pc = 0xbfc0c464
+        [ 612000 ns] Test is running, debug_wb_pc = 0xbfc0d404
+----[ 619125 ns] Number 8'd31 Functional Test Point PASS!!!
+        [ 622000 ns] Test is running, debug_wb_pc = 0xbfc5cee4
+        [ 632000 ns] Test is running, debug_wb_pc = 0xbfc5de84
+----[ 641295 ns] Number 8'd32 Functional Test Point PASS!!!
+        [ 642000 ns] Test is running, debug_wb_pc = 0xbfc61240
+        [ 652000 ns] Test is running, debug_wb_pc = 0xbfc621e0
+----[ 660535 ns] Number 8'd33 Functional Test Point PASS!!!
+        [ 662000 ns] Test is running, debug_wb_pc = 0xbfc10380
+        [ 672000 ns] Test is running, debug_wb_pc = 0xbfc11320
+        [ 682000 ns] Test is running, debug_wb_pc = 0xbfc122c0
+----[ 682945 ns] Number 8'd34 Functional Test Point PASS!!!
+        [ 692000 ns] Test is running, debug_wb_pc = 0xbfc08b5c
+        [ 702000 ns] Test is running, debug_wb_pc = 0xbfc09afc
+----[ 702315 ns] Number 8'd35 Functional Test Point PASS!!!
+        [ 712000 ns] Test is running, debug_wb_pc = 0xbfc41858
+        [ 722000 ns] Test is running, debug_wb_pc = 0xbfc427f8
+----[ 724735 ns] Number 8'd36 Functional Test Point PASS!!!
+        [ 732000 ns] Test is running, debug_wb_pc = 0xbfc48bf8
+        [ 742000 ns] Test is running, debug_wb_pc = 0xbfc49f48
+        [ 752000 ns] Test is running, debug_wb_pc = 0xbfc4b328
+        [ 762000 ns] Test is running, debug_wb_pc = 0xbfc4c6f0
+----[ 767945 ns] Number 8'd37 Functional Test Point PASS!!!
+        [ 772000 ns] Test is running, debug_wb_pc = 0xbfc31194
+        [ 782000 ns] Test is running, debug_wb_pc = 0xbfc3256c
+        [ 792000 ns] Test is running, debug_wb_pc = 0xbfc33924
+        [ 802000 ns] Test is running, debug_wb_pc = 0xbfc34d28
+----[ 810875 ns] Number 8'd38 Functional Test Point PASS!!!
+        [ 812000 ns] Test is running, debug_wb_pc = 0xbfc577b0
+        [ 822000 ns] Test is running, debug_wb_pc = 0xbfc58bb8
+        [ 832000 ns] Test is running, debug_wb_pc = 0xbfc59f54
+        [ 842000 ns] Test is running, debug_wb_pc = 0xbfc5b2ec
+        [ 852000 ns] Test is running, debug_wb_pc = 0xbfc5c710
+----[ 854085 ns] Number 8'd39 Functional Test Point PASS!!!
+        [ 862000 ns] Test is running, debug_wb_pc = 0xbfc39bdc
+        [ 872000 ns] Test is running, debug_wb_pc = 0xbfc3ae1c
+        [ 882000 ns] Test is running, debug_wb_pc = 0xbfc3c07c
+----[ 887675 ns] Number 8'd40 Functional Test Point PASS!!!
+        [ 892000 ns] Test is running, debug_wb_pc = 0xbfc1cca8
+        [ 902000 ns] Test is running, debug_wb_pc = 0xbfc1dee8
+        [ 912000 ns] Test is running, debug_wb_pc = 0xbfc1f100
+        [ 922000 ns] Test is running, debug_wb_pc = 0xbfc20358
+        [ 932000 ns] Test is running, debug_wb_pc = 0xbfc21608
+----[ 935465 ns] Number 8'd41 Functional Test Point PASS!!!
+        [ 942000 ns] Test is running, debug_wb_pc = 0xbfc12fdc
+        [ 952000 ns] Test is running, debug_wb_pc = 0xbfc1428c
+        [ 962000 ns] Test is running, debug_wb_pc = 0xbfc154dc
+        [ 972000 ns] Test is running, debug_wb_pc = 0xbfc1671c
+        [ 982000 ns] Test is running, debug_wb_pc = 0xbfc1794c
+----[ 985425 ns] Number 8'd42 Functional Test Point PASS!!!
+        [ 992000 ns] Test is running, debug_wb_pc = 0xbfc6ca0c
+        [1002000 ns] Test is running, debug_wb_pc = 0xbfc6da14
+        [1012000 ns] Test is running, debug_wb_pc = 0xbfc6ea2c
+        [1022000 ns] Test is running, debug_wb_pc = 0xbfc6fa20
+        [1032000 ns] Test is running, debug_wb_pc = 0xbfc70a28
+----[1040415 ns] Number 8'd43 Functional Test Point PASS!!!
+        [1042000 ns] Test is running, debug_wb_pc = 0xbfc3ef78
+        [1052000 ns] Test is running, debug_wb_pc = 0xbfc3f430
+        [1062000 ns] Test is running, debug_wb_pc = 0xbfc3f8e0
+        [1072000 ns] Test is running, debug_wb_pc = 0xbfc3fd78
+        [1082000 ns] Test is running, debug_wb_pc = 0xbfc40210
+        [1092000 ns] Test is running, debug_wb_pc = 0xbfc406dc
+----[1098085 ns] Number 8'd44 Functional Test Point PASS!!!
+        [1102000 ns] Test is running, debug_wb_pc = 0xbfc71d20
+        [1112000 ns] Test is running, debug_wb_pc = 0xbfc721d0
+        [1122000 ns] Test is running, debug_wb_pc = 0xbfc72688
+        [1132000 ns] Test is running, debug_wb_pc = 0xbfc72b20
+        [1142000 ns] Test is running, debug_wb_pc = 0xbfc72fb8
+        [1152000 ns] Test is running, debug_wb_pc = 0xbfc7347c
+        [1162000 ns] Test is running, debug_wb_pc = 0xbfc73920
+        [1172000 ns] Test is running, debug_wb_pc = 0xbfc73db8
+----[1181995 ns] Number 8'd45 Functional Test Point PASS!!!
+        [1182000 ns] Test is running, debug_wb_pc = 0xbfc7425c
+        [1192000 ns] Test is running, debug_wb_pc = 0xbfc22144
+        [1202000 ns] Test is running, debug_wb_pc = 0xbfc22648
+        [1212000 ns] Test is running, debug_wb_pc = 0xbfc22b58
+        [1222000 ns] Test is running, debug_wb_pc = 0xbfc23044
+        [1232000 ns] Test is running, debug_wb_pc = 0xbfc2352c
+        [1242000 ns] Test is running, debug_wb_pc = 0xbfc23a48
+        [1252000 ns] Test is running, debug_wb_pc = 0xbfc23ee8
+----[1256455 ns] Number 8'd46 Functional Test Point PASS!!!
+        [1262000 ns] Test is running, debug_wb_pc = 0xbfc0368c
+        [1272000 ns] Test is running, debug_wb_pc = 0xbfc03b78
+        [1282000 ns] Test is running, debug_wb_pc = 0xbfc04064
+        [1292000 ns] Test is running, debug_wb_pc = 0xbfc04570
+        [1302000 ns] Test is running, debug_wb_pc = 0xbfc04a78
+        [1312000 ns] Test is running, debug_wb_pc = 0xbfc04f60
+        [1322000 ns] Test is running, debug_wb_pc = 0xbfc05424
+----[1323235 ns] Number 8'd47 Functional Test Point PASS!!!
+==============================================================
+gettrace end!
+----Succeed in generating trace file!
+$finish called at time : 1323905 ns : File "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" Line 221
+run: Time (s): cpu = 00:00:51 ; elapsed = 00:02:15 . Memory (MB): peak = 1306.172 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files e:/TestDoc/soft/part_func/obj/inst_ram.coe] -no_script -reset -force -quiet
+remove_files  e:/TestDoc/soft/part_func/obj/inst_ram.coe
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../soft/part_func/obj/inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {E:/TestDoc/soft/part_func/obj/inst_ram.coe}] [get_ips inst_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../soft/part_func/obj/inst_ram.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj_2/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../soft/part_func/obj_2/inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {E:/TestDoc/soft/part_func/obj_2/inst_ram.coe}] [get_ips inst_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj_2/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../soft/part_func/obj_2/inst_ram.coe'
+generate_target all [get_files  E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_ram'...
+export_ip_user_files -of_objects [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+reset_run inst_ram_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/inst_ram_synth_1
+
+launch_runs -jobs 4 inst_ram_synth_1
+[Sun Dec  8 11:28:50 2019] Launched inst_ram_synth_1...
+Run output will be captured here: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/inst_ram_synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado_2018_software/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ejtag_tap_fsm
+INFO: [VRFC 10-311] analyzing module gr_heap_2r1w_32x32
+INFO: [VRFC 10-311] analyzing module ls132r_decode_stage
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_dcr
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_hb
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_ib
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_tap
+INFO: [VRFC 10-311] analyzing module ls132r_execute_stage
+INFO: [VRFC 10-311] analyzing module ls132r_fetch_stage
+INFO: [VRFC 10-311] analyzing module ls132r_interface
+INFO: [VRFC 10-311] analyzing module ls132r_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado_2018_software/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8be32c0e75274db89ff01e49e80abbee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:17534]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:18261]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22335]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22785]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:23620]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:24978]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:36552]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:42650]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:44039]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:48896]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49221]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49580]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49597]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51474]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51477]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:53029]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.gr_heap_2r1w_32x32
+Compiling module xil_defaultlib.ls132r_decode_stage
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.ls132r_ejtag_dcr
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ls132r_ejtag_ib
+Compiling module xil_defaultlib.ls132r_ejtag_hb
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.ejtag_tap_fsm
+Compiling module xil_defaultlib.ls132r_ejtag_tap
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.ls132r_execute_stage
+Compiling module xil_defaultlib.ls132r_fetch_stage
+Compiling module xil_defaultlib.ls132r_interface
+Compiling module xil_defaultlib.ls132r_top
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1333.129 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 1000
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1333.129 ; gain = 0.000
+run all
+==============================================================
+Test begin!
+----[  14055 ns] Number 8'd01 Functional Test Point PASS!!!
+        [  22000 ns] Test is running, debug_wb_pc = 0xbfc110dc
+----[  23675 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  32000 ns] Test is running, debug_wb_pc = 0xbfc03ef8
+----[  33225 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  42000 ns] Test is running, debug_wb_pc = 0xbfc1285c
+----[  42155 ns] Number 8'd04 Functional Test Point PASS!!!
+----[  47325 ns] Number 8'd05 Functional Test Point PASS!!!
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc0161c
+----[  55415 ns] Number 8'd06 Functional Test Point PASS!!!
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc00fbc
+----[  64145 ns] Number 8'd07 Functional Test Point PASS!!!
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc09bc0
+----[  72555 ns] Number 8'd08 Functional Test Point PASS!!!
+----[  81285 ns] Number 8'd09 Functional Test Point PASS!!!
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc02a7c
+----[  90655 ns] Number 8'd10 Functional Test Point PASS!!!
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc15080
+----[  99385 ns] Number 8'd11 Functional Test Point PASS!!!
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc0a054
+----[ 105765 ns] Number 8'd12 Functional Test Point PASS!!!
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc04894
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc05590
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc062a4
+----[ 133565 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 142000 ns] Test is running, debug_wb_pc = 0xbfc13304
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc14024
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc14d24
+----[ 163315 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 172000 ns] Test is running, debug_wb_pc = 0xbfc0ad70
+        [ 182000 ns] Test is running, debug_wb_pc = 0xbfc0bab8
+----[ 185165 ns] Number 8'd15 Functional Test Point PASS!!!
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc0ede4
+        [ 202000 ns] Test is running, debug_wb_pc = 0xbfc0fb04
+----[ 209995 ns] Number 8'd16 Functional Test Point PASS!!!
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc06e78
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc07bc8
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc08968
+----[ 241025 ns] Number 8'd17 Functional Test Point PASS!!!
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc0bf94
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc0ccec
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc0da94
+----[ 270265 ns] Number 8'd18 Functional Test Point PASS!!!
+==============================================================
+gettrace end!
+----Succeed in generating trace file!
+$finish called at time : 270935 ns : File "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" Line 221
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1333.129 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj_3/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../soft/part_func/obj_3/inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {E:/TestDoc/soft/part_func/obj_3/inst_ram.coe}] [get_ips inst_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/TestDoc/soft/part_func/obj_3/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../soft/part_func/obj_3/inst_ram.coe'
+generate_target all [get_files  E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_ram'...
+export_ip_user_files -of_objects [get_files E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+reset_run inst_ram_synth_1
+launch_runs -jobs 4 inst_ram_synth_1
+[Sun Dec  8 11:40:00 2019] Launched inst_ram_synth_1...
+Run output will be captured here: E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.runs/inst_ram_synth_1/runme.log
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado_2018_software/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ejtag_tap_fsm
+INFO: [VRFC 10-311] analyzing module gr_heap_2r1w_32x32
+INFO: [VRFC 10-311] analyzing module ls132r_decode_stage
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_dcr
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_hb
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_ib
+INFO: [VRFC 10-311] analyzing module ls132r_ejtag_tap
+INFO: [VRFC 10-311] analyzing module ls132r_execute_stage
+INFO: [VRFC 10-311] analyzing module ls132r_fetch_stage
+INFO: [VRFC 10-311] analyzing module ls132r_interface
+INFO: [VRFC 10-311] analyzing module ls132r_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado_2018_software/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8be32c0e75274db89ff01e49e80abbee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:17534]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:18261]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22335]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22785]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:23620]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:24978]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:36552]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:42650]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:44039]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:48896]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49221]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49580]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49597]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51474]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51477]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:53029]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.gr_heap_2r1w_32x32
+Compiling module xil_defaultlib.ls132r_decode_stage
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.ls132r_ejtag_dcr
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ls132r_ejtag_ib
+Compiling module xil_defaultlib.ls132r_ejtag_hb
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.ejtag_tap_fsm
+Compiling module xil_defaultlib.ls132r_ejtag_tap
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.ls132r_execute_stage
+Compiling module xil_defaultlib.ls132r_fetch_stage
+Compiling module xil_defaultlib.ls132r_interface
+Compiling module xil_defaultlib.ls132r_top
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1350.055 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1350.055 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1350.055 ; gain = 0.000
+run all
+==============================================================
+Test begin!
+----[  14055 ns] Number 8'd01 Functional Test Point PASS!!!
+----[  19735 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  22000 ns] Test is running, debug_wb_pc = 0xbfc00464
+----[  25575 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  32000 ns] Test is running, debug_wb_pc = 0xbfc00678
+----[  32255 ns] Number 8'd04 Functional Test Point PASS!!!
+----[  38845 ns] Number 8'd05 Functional Test Point PASS!!!
+        [  42000 ns] Test is running, debug_wb_pc = 0xbfc003a8
+----[  45525 ns] Number 8'd06 Functional Test Point PASS!!!
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc02bd4
+----[  52895 ns] Number 8'd07 Functional Test Point PASS!!!
+----[  60285 ns] Number 8'd08 Functional Test Point PASS!!!
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc004ec
+----[  67655 ns] Number 8'd09 Functional Test Point PASS!!!
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc021f4
+----[  75315 ns] Number 8'd10 Functional Test Point PASS!!!
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc049ac
+----[  82975 ns] Number 8'd11 Functional Test Point PASS!!!
+----[  90535 ns] Number 8'd12 Functional Test Point PASS!!!
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc003e0
+----[  97465 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc005e0
+----[ 106675 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc003a0
+----[ 121965 ns] Number 8'd15 Functional Test Point PASS!!!
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc00800
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc006a0
+----[ 137255 ns] Number 8'd16 Functional Test Point PASS!!!
+        [ 142000 ns] Test is running, debug_wb_pc = 0xbfc003b0
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc003b4
+----[ 152545 ns] Number 8'd17 Functional Test Point PASS!!!
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc003bc
+----[ 167835 ns] Number 8'd18 Functional Test Point PASS!!!
+        [ 172000 ns] Test is running, debug_wb_pc = 0xbfc00478
+        [ 182000 ns] Test is running, debug_wb_pc = 0xbfc0470c
+----[ 183125 ns] Number 8'd19 Functional Test Point PASS!!!
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc004c4
+----[ 198415 ns] Number 8'd20 Functional Test Point PASS!!!
+        [ 202000 ns] Test is running, debug_wb_pc = 0xbfc00488
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc005a8
+----[ 213715 ns] Number 8'd21 Functional Test Point PASS!!!
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc04d60
+----[ 229025 ns] Number 8'd22 Functional Test Point PASS!!!
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc00480
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc00684
+----[ 244325 ns] Number 8'd23 Functional Test Point PASS!!!
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc05b0c
+----[ 259625 ns] Number 8'd24 Functional Test Point PASS!!!
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc00454
+        [ 272000 ns] Test is running, debug_wb_pc = 0xbfc0069c
+----[ 274925 ns] Number 8'd25 Functional Test Point PASS!!!
+        [ 282000 ns] Test is running, debug_wb_pc = 0xbfc00380
+----[ 290225 ns] Number 8'd26 Functional Test Point PASS!!!
+==============================================================
+gettrace end!
+----Succeed in generating trace file!
+$finish called at time : 290905 ns : File "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" Line 221
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1350.055 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 15:48:04 2019...

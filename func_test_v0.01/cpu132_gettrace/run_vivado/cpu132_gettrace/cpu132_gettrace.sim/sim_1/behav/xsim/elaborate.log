@@ -1,0 +1,72 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado_2018_software/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8be32c0e75274db89ff01e49e80abbee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:17534]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:18261]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22335]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:22785]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:23620]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:24978]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:36552]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:42650]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:44039]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:48896]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49221]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49580]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:49597]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51474]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:51477]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v:53029]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.gr_heap_2r1w_32x32
+Compiling module xil_defaultlib.ls132r_decode_stage
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.ls132r_ejtag_dcr
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ls132r_ejtag_ib
+Compiling module xil_defaultlib.ls132r_ejtag_hb
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.ejtag_tap_fsm
+Compiling module xil_defaultlib.ls132r_ejtag_tap
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.ls132r_execute_stage
+Compiling module xil_defaultlib.ls132r_fetch_stage
+Compiling module xil_defaultlib.ls132r_interface
+Compiling module xil_defaultlib.ls132r_top
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

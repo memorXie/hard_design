@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jul 21 09:41:38 2019
+# Process ID: 3488
+# Current directory: C:/Users/15440/Desktop/ÁúÐ¾±­/nscscc2019_release_v0.01/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11116 C:\Users\15440\Desktop\ÁúÐ¾±­\nscscc2019_release_v0.01\func_test_v0.01\soc_sram_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/15440/Desktop/ÁúÐ¾±­/nscscc2019_release_v0.01/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/15440/Desktop/ÁúÐ¾±­/nscscc2019_release_v0.01/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/15440/Desktop/ÁúÐ¾±­/nscscc2019_release_v0.01/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/15440/Desktop/ÁúÐ¾±­/nscscc2019_release_v0.01/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1'
+INFO: [Project 1-313] Project file moved from 'E:/nscscc2019/develop/func_test_v0.03/soc_sram_func/run_vivado/mycpu_prj1' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/15440/Desktop/ÁúÐ¾±­/nscscc2019_release_v0.01/func_test_v0.01/soft/func/obj/inst_ram.coe', nor could it be found using path 'E:/nscscc2019/develop/func_test_v0.03/soft/func/obj/inst_ram.coe'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'data_ram_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'clk_pll_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'inst_ram_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/15440/Desktop/ÁúÐ¾±­/nscscc2019_release_v0.01/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files', nor could it be found using path 'E:/nscscc2019/develop/func_test_v0.03/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.COE_FILE' method. ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.COE_FILE' method. ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.COE_FILE' method. ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.COE_FILE' method. ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.COE_FILE' method. ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.COE_FILE' method. ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+
+open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 916.273 ; gain = 366.508
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 21 09:44:05 2019...

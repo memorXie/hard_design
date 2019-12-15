@@ -1,0 +1,39 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../mycpu.srcs/sources_1/imports/myCPU" --include "../../../../../../rtl/xilinx_ip/clk_pll" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/xilinx_ip/data_ram/sim/data_ram.v" \
+"../../../../../../rtl/xilinx_ip/inst_ram/sim/inst_ram.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/ALU.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/ALU_control.v" \
+"../../../../mycpu.srcs/sources_1/new/PC.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/adder.v" \
+"../../../../../../rtl/BRIDGE/bridge_1x2.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/controller.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/data_memory_controller.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/datapath.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/div_radix2.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/eqcmp.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/flopenr.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/flopenrc.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/hazard.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/hilo_reg.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/load_which.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/main_decoder.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/mips.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/mux2.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/mux3.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/regfile.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/signext.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/sl2.v" \
+"../../../../../../rtl/soc_lite_top.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/store_which.v" \
+"../../../../mycpu.srcs/sources_1/imports/myCPU/top.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/TestDoc/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v,1533655037,verilog,,E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v,,bridge_1x2,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/rtl/CONFREG/confreg.v,1557750012,verilog,,E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v,,confreg,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/rtl/cpu132/gs132_verilog.v,1531191574,verilog,,E:/TestDoc/cpu132_gettrace/rtl/soc_lite_top.v,,ejtag_tap_fsm;gr_heap_2r1w_32x32;ls132r_decode_stage;ls132r_ejtag_dcr;ls132r_ejtag_hb;ls132r_ejtag_ib;ls132r_ejtag_tap;ls132r_execute_stage;ls132r_fetch_stage;ls132r_interface;ls132r_top,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/rtl/soc_lite_top.v,1557716831,verilog,,E:/TestDoc/cpu132_gettrace/testbench/tb_top.v,,soc_lite_top,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v,1575772587,verilog,,E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/sim/data_ram.v,,clk_pll,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v,1575772587,verilog,,E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/clk_pll/clk_pll.v,,clk_pll_clk_wiz,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/data_ram/sim/data_ram.v,1575772590,verilog,,E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/sim/inst_ram.v,,data_ram,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/rtl/xilinx_ip/inst_ram/sim/inst_ram.v,1575776399,verilog,,E:/TestDoc/cpu132_gettrace/rtl/BRIDGE/bridge_1x2.v,,inst_ram,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+E:/TestDoc/cpu132_gettrace/run_vivado/cpu132_gettrace/cpu132_gettrace.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/TestDoc/cpu132_gettrace/testbench/tb_top.v,1557735308,verilog,,,,tb_top,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,

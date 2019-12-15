@@ -1,0 +1,65 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+==============================================================
+Test begin!
+----[  14055 ns] Number 8'd01 Functional Test Point PASS!!!
+----[  19735 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  22000 ns] Test is running, debug_wb_pc = 0xbfc00464
+----[  25575 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  32000 ns] Test is running, debug_wb_pc = 0xbfc00678
+----[  32255 ns] Number 8'd04 Functional Test Point PASS!!!
+----[  38845 ns] Number 8'd05 Functional Test Point PASS!!!
+        [  42000 ns] Test is running, debug_wb_pc = 0xbfc003a8
+----[  45525 ns] Number 8'd06 Functional Test Point PASS!!!
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc02bd4
+----[  52895 ns] Number 8'd07 Functional Test Point PASS!!!
+----[  60285 ns] Number 8'd08 Functional Test Point PASS!!!
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc004ec
+----[  67655 ns] Number 8'd09 Functional Test Point PASS!!!
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc021f4
+----[  75315 ns] Number 8'd10 Functional Test Point PASS!!!
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc049ac
+----[  82975 ns] Number 8'd11 Functional Test Point PASS!!!
+----[  90535 ns] Number 8'd12 Functional Test Point PASS!!!
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc003e0
+----[  97465 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc005e0
+----[ 106675 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc003a0
+----[ 121965 ns] Number 8'd15 Functional Test Point PASS!!!
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc00800
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc006a0
+----[ 137255 ns] Number 8'd16 Functional Test Point PASS!!!
+        [ 142000 ns] Test is running, debug_wb_pc = 0xbfc003b0
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc003b4
+----[ 152545 ns] Number 8'd17 Functional Test Point PASS!!!
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc003bc
+----[ 167835 ns] Number 8'd18 Functional Test Point PASS!!!
+        [ 172000 ns] Test is running, debug_wb_pc = 0xbfc00478
+        [ 182000 ns] Test is running, debug_wb_pc = 0xbfc0470c
+----[ 183125 ns] Number 8'd19 Functional Test Point PASS!!!
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc004c4
+----[ 198415 ns] Number 8'd20 Functional Test Point PASS!!!
+        [ 202000 ns] Test is running, debug_wb_pc = 0xbfc00488
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc005a8
+----[ 213715 ns] Number 8'd21 Functional Test Point PASS!!!
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc04d60
+----[ 229025 ns] Number 8'd22 Functional Test Point PASS!!!
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc00480
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc00684
+----[ 244325 ns] Number 8'd23 Functional Test Point PASS!!!
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc05b0c
+----[ 259625 ns] Number 8'd24 Functional Test Point PASS!!!
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc00454
+        [ 272000 ns] Test is running, debug_wb_pc = 0xbfc0069c
+----[ 274925 ns] Number 8'd25 Functional Test Point PASS!!!
+        [ 282000 ns] Test is running, debug_wb_pc = 0xbfc00380
+----[ 290225 ns] Number 8'd26 Functional Test Point PASS!!!
+==============================================================
+gettrace end!
+----Succeed in generating trace file!
+$finish called at time : 290905 ns : File "E:/TestDoc/cpu132_gettrace/testbench/tb_top.v" Line 221
